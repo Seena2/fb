@@ -1,0 +1,128 @@
+/* General Styling*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f0f2f5;
+}
+
+/* Top Navigation Styling */
+nav {
+  background-color: #ffffff;
+  padding: 1.42rem;
+  display: flex;
+  height: 3.4rem;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 4px 4px 2px 1px rgba(42, 42, 44, 0.1);
+  font-size: 1.2rem;
+}
+
+nav div a {
+  text-decoration: none;
+  padding-right: 1rem;
+  justify-content: space-between;
+}
+
+.search-box {
+  background-color: #f0f2f5;
+  border: 0;
+  width: 70%;
+  padding: 0.6rem;
+  border-radius: 1rem;
+  margin: 0.2rem;
+}
+/*Content Styling */
+#container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 2rem;
+  margin: 2rem;
+  font-size: 1.1rem;
+}
+
+.left-section ul li,
+.right-section ul li {
+  padding: 0.7rem;
+  border-radius: 0.3rem;
+  list-style: none;
+}
+.left-section ul li:hover,
+.right-section ul li:hover {
+  background: #e6e3e3;
+}
+.left-section ul li a,
+.right-section ul li a {
+  text-decoration: none;
+  color: #0e0c0c;
+  font: bold;
+}
+/* horizontal line to separate sections*/
+.top-border {
+  border-top: 0.1rem solid #928888;
+  padding-top: 1rem;
+}
+/* speared items of section heading*/
+.spread {
+  display: flex;
+  justify-content: space-between;
+}
+.small-menu :last-child {
+  padding-left: 1rem;
+}
+.card a {
+  display: flex;
+}
+/* main/Center items stylng*/
+.whats,
+.post {
+  background-color: #ffffff;
+  padding: 0.5rem;
+  box-shadow: 1px 1px 1px 1px rgba(42, 42, 44, 0.1);
+  border-radius: 0.4rem;
+  margin: 1rem;
+}
+.whats div {
+  display: flex;
+}
+.whats input {
+  width: 80%;
+  background-color: #f0f2f5;
+  border: 0;
+  padding: 0.6rem;
+  border-radius: 1rem;
+  align-items: center;
+}
+.whats ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.8rem;
+  list-style: none;
+  border-top: 1px solid #dbd6d6;
+  margin-top: 0.7rem;
+}
+.whats ul li a {
+  text-decoration: none;
+}
+/*Post Styling */
+.publisher-name,
+.like-counter,
+.interactions {
+  display: flex;
+  justify-content: space-between;
+}
+.like-counter {
+  border-bottom: 1px solid #b8b2b2;
+  padding-bottom: 0.5rem;
+}
+.post-paragraph {
+  text-align: start;
+  padding: 0.7rem;
+}
+.interactions a {
+  text-decoration: none;
+  padding: 1rem;
+}
