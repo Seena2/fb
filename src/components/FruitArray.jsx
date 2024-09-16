@@ -11,7 +11,7 @@ export default function FruitArray() {
   return (
     <div>
       <h2>Fruits</h2>
-      //Simple array demo
+      
       <ul>
         {fruits.map((fruit) => (
           <li key={fruit.name}>

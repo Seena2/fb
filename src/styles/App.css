@@ -114,6 +114,10 @@ nav div a {
   display: flex;
   justify-content: space-between;
 }
+.timeSmall{
+  font-size: 0.9rem;
+  color: #928888;
+}
 .like-counter {
   border-bottom: 1px solid #b8b2b2;
   padding-bottom: 0.5rem;

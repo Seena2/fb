@@ -94,18 +94,19 @@ export default function Post({
 */
 //Passing Array of Object as props to hold all the data
 //instead of passing each value individuallyLets pass them as an array of objects
-export default function Post() {
+// eslint-disable-next-line react/prop-types
+export default function Post({time,firstName,lastName,message,likes,comments,shares}) {
   //manuplating data
 
-  return (
+  return (      
     <div className="post">
-      <div className="publisher-name">
+       <div className="publisher-name">
         <div className="card">
           <a href="http://">
             <img src="" alt="" />
           </a>
-          <a href="#">{/*firstName} {lastName */}</a>
-          <a href="">{/*time*/} ago</a>
+          <a href="#">{firstName}{" "} {lastName}</a>
+          <i className="timeSmall">{time} ago</i>
         </div>
 
         <div className="small-menu">
@@ -113,15 +114,15 @@ export default function Post() {
           <a href="">X</a>
         </div>
       </div>
-      <p className="post-paragraph">{/*message*/}</p>
+      <p className="post-paragraph">{message}</p>
       <img src="" alt="" />
       <div className="comment">
         <div className="like-counter">
-          <div className="like-num">{/*numberOfReact*/} k</div>
+          <div className="like-num">{comments+likes+shares} k</div>
           <div className="small-menu">
-            <a href="">{/*likes*/} likes</a>
-            <a href="">{/*shares*/} shares</a>
-            <p>{/*reaction*/}</p>
+            <a href="">{likes} likes</a>
+            <a href=""> {shares} shares</a>
+            
           </div>
         </div>
       </div>
@@ -132,5 +133,6 @@ export default function Post() {
         <a href="http://">Share</a>
       </div>
     </div>
+   
   );
 }

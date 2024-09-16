@@ -1,31 +1,33 @@
 export const Posts = [
   {
+    uid:1,
     firstName: "John",
     lastName: "Doe",
     time: "4min",
     message: " #Hope and Dream",
-    numberOfReact: "26",
+   
     likes: 400,
     comments: 24,
     shares: 3,
   },
   {
+    uid:2,
     firstName: "Jamal",
     lastName: "Kamal",
     time: "4 days",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis incidunt sequi magni ad, quasi exercitationem amet laborum ducimus? Quibusdam sapiente perferendis repudiandae nostrum ea. Nemo sapiente aspernatur harum molestias architecto.  ",
-    numberOfReact: "200",
+   
     likes: 123,
     comments: 24,
     shares: 46,
   },
   {
+    uid:3,
     firstName: "Bontu",
     lastName: "Bekele",
     time: "12 hrs",
     message: "Fredom is Sweet, but it is not free",
-    numberOfReact: "167",
     likes: 15,
     comments: 94,
     shares: 93,
